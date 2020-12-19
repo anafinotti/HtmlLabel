@@ -10,6 +10,7 @@
 		0CFB1545258E9FDE007CA1E5 /* HtmlLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CFB153B258E9FDD007CA1E5 /* HtmlLabel.framework */; };
 		0CFB154A258E9FDE007CA1E5 /* HtmlLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFB1549258E9FDE007CA1E5 /* HtmlLabelTests.swift */; };
 		0CFB154C258E9FDE007CA1E5 /* HtmlLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CFB153E258E9FDD007CA1E5 /* HtmlLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CFB1573258EA214007CA1E5 /* HtmlLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFB1572258EA214007CA1E5 /* HtmlLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		0CFB1544258E9FDE007CA1E5 /* HtmlLabelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HtmlLabelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CFB1549258E9FDE007CA1E5 /* HtmlLabelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HtmlLabelTests.swift; sourceTree = "<group>"; };
 		0CFB154B258E9FDE007CA1E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CFB1572258EA214007CA1E5 /* HtmlLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HtmlLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				0CFB153E258E9FDD007CA1E5 /* HtmlLabel.h */,
 				0CFB153F258E9FDD007CA1E5 /* Info.plist */,
+				0CFB1572258EA214007CA1E5 /* HtmlLabel.swift */,
 			);
 			path = HtmlLabel;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				TargetAttributes = {
 					0CFB153A258E9FDD007CA1E5 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 					0CFB1543258E9FDE007CA1E5 = {
 						CreatedOnToolsVersion = 12.3;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CFB1573258EA214007CA1E5 /* HtmlLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		0CFB1550258E9FDE007CA1E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = VZB2Z99GV8;
@@ -357,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nomads.HtmlLabel;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +372,7 @@
 		0CFB1551258E9FDE007CA1E5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = VZB2Z99GV8;
@@ -389,6 +397,7 @@
 		0CFB1553258E9FDE007CA1E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VZB2Z99GV8;
 				INFOPLIST_FILE = HtmlLabelTests/Info.plist;
@@ -407,6 +416,7 @@
 		0CFB1554258E9FDE007CA1E5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VZB2Z99GV8;
 				INFOPLIST_FILE = HtmlLabelTests/Info.plist;

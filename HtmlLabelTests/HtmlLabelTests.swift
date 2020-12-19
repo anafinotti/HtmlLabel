@@ -10,8 +10,12 @@ import XCTest
 
 class HtmlLabelTests: XCTestCase {
 
+    var htmlLabel: HtmlLabel?
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        self.htmlLabel = HtmlLabel()
+        self.htmlLabel?.text = "<b>This is a test</b>"
     }
 
     override func tearDownWithError() throws {
@@ -19,15 +23,7 @@ class HtmlLabelTests: XCTestCase {
     }
 
     func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        XCTAssertNotNil(self.htmlLabel?.text)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
